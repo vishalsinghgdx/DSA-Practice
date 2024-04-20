@@ -8,6 +8,10 @@ public class RecursionProblems
             return;
         PrintCounting(num-1);
         Console.WriteLine(num);
+    }
+
+    public void FibonacciSeries()
+    {
         
     }
 }
