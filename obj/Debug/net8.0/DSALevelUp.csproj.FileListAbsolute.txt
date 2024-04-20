@@ -21,6 +21,7 @@
 /Users/fbs/Documents/CodingProjects/DSALevelUp/obj/Debug/net8.0/DSALevelUp.AssemblyInfoInputs.cache
 /Users/fbs/Documents/CodingProjects/DSALevelUp/obj/Debug/net8.0/DSALevelUp.AssemblyInfo.cs
 /Users/fbs/Documents/CodingProjects/DSALevelUp/obj/Debug/net8.0/DSALevelUp.csproj.CoreCompileInputs.cache
+/Users/fbs/Documents/CodingProjects/DSALevelUp/obj/Debug/net8.0/DSALevelUp.sourcelink.json
 /Users/fbs/Documents/CodingProjects/DSALevelUp/obj/Debug/net8.0/DSALevelUp.dll
 /Users/fbs/Documents/CodingProjects/DSALevelUp/obj/Debug/net8.0/refint/DSALevelUp.dll
 /Users/fbs/Documents/CodingProjects/DSALevelUp/obj/Debug/net8.0/DSALevelUp.pdb

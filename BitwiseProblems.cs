@@ -61,4 +61,25 @@ public class BitwiseProblems
             else 
             System.Console.WriteLine($"N is not a power of 2");
     }
+
+    // 1010
+    public int CountSetbits(int N){
+        int count = 0;
+        while (N > 0){
+            //System.Console.WriteLine(N);
+            if((N & 1) == 1)
+                count++;
+            N = N >> 1;
+        }
+        return count;
+    }
+
+    public int CountSetbitHack(int N){
+        int count = 0;
+        while(N > 0){
+            N = N & (N-1);
+            count++;
+        }
+        return count;
+    }
 }
