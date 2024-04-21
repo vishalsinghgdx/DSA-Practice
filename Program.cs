@@ -22,6 +22,8 @@ internal class Program
         //var ramdomPr = new RandomProblems();
         //System.Console.WriteLine(ramdomPr.SearchInSortedMatrix(1));
         var recurs = new RecursionProblems();
-        recurs.PrintCounting(100);
+        int result = recurs.Factorial(6);
+        Console.WriteLine(result);
+        
     }
 }
