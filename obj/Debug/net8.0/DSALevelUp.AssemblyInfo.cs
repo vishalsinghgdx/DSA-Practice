@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DSALevelUp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc1b80686679940e537ee24f3db2c9e5d0ede208")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3ca88c8859e7fc83f1ba9838344856093f77d6a")]
 [assembly: System.Reflection.AssemblyProductAttribute("DSALevelUp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DSALevelUp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

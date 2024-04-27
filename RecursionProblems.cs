@@ -55,4 +55,54 @@ public class RecursionProblems
             return 1;
         return num * Factorial(num - 1);
     }
+
+    public void PrintPermutations()
+    {
+        // [1,2,3] print all the possible permutations
+        int[] arr = { 1, 2, 3, 4 };
+        PrintPermutations(arr, 0, new bool[arr.Length], new List<int>());
+    }
+
+    private void PrintPermutations(int[] arr, int pos, bool[] selected, List<int> ans)
+    {
+        if (pos == arr.Length)
+        {
+            Console.WriteLine(string.Join(", ", ans));
+            return;
+        }
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (selected[i] == false)
+            {
+                selected[i] = true;
+                ans.Add(arr[i]);
+                PrintPermutations(arr, pos+1, selected, ans);
+                selected[i] = false;
+                ans.RemoveAt(ans.Count - 1);
+            }
+        }
+    }
+
+    public List<List<int>> FindAllSubsets()
+    {
+        int[] arr = { 1, 2, 3 };
+        List<List<int>> ans = new List<List<int>>();
+        List<int> curr = new List<int>();
+        FindAllSubsets(arr, 0, curr, ans);
+        
+        return ans;
+    }
+
+    private void FindAllSubsets(int[] arr, int pos, List<int> curr, List<List<int>> ans)
+    {
+        if (pos == arr.Length)
+        {
+            ans.Add(new List<int>(curr));
+            return;
+        }
+        curr.Add(arr[pos]);
+        FindAllSubsets(arr, pos + 1, curr, ans);
+        curr.RemoveAt(curr.Count - 1);
+        FindAllSubsets(arr, pos + 1, curr, ans);
+    }
 }
