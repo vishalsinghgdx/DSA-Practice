@@ -389,4 +389,33 @@ public class RandomProblems
         }
         return false;
     }
+    
+    // find subsets
+    public void subsets()
+    {
+        subsets("123", 0, new List<char>());
+    }
+
+    private void subsets(string value, int counter, List<char> result)
+    {
+        if (value.Length == counter)
+        {
+            // one subset found
+            // print
+            Console.Write("{");
+            foreach (var c in result)
+            {
+                Console.Write(c+",");
+            }
+
+            Console.Write("}");
+            Console.WriteLine();
+            return;
+        }
+        
+        result.Add(value[counter]);
+        subsets(value, counter+1, result);
+        result.RemoveAt(result.Count-1);
+        subsets(value, counter+1, result);
+    }
 }

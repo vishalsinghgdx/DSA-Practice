@@ -22,21 +22,73 @@ internal class Program
         //var ramdomPr = new RandomProblems();
         //System.Console.WriteLine(ramdomPr.SearchInSortedMatrix(1));
         var recurs = new RecursionProblems();
-       // int result = recurs.Factorial(6);
+        //recurs.CountSubsets(new int[]{1,2,3,4,5},4);
+        //recurs.GeneratesBrackets(2);
+        recurs.SmartKeypad("1234");
+        // int result = recurs.Factorial(6);
         //Console.WriteLine(result);
         //recurs.PrintPermutations();
-        var ans = recurs.FindAllSubsets();
-        foreach (List<int> data in ans)
-        {
-            Console.Write($"[");
-            foreach (int i in data)
-            {
-                Console.Write($"{i},");
-            }
-            Console.Write($"]");
-            Console.WriteLine();
-        }
+        // var ans = recurs.FindAllSubsets();
+        // foreach (List<int> data in ans)
+        // {
+        //     Console.Write($"[");
+        //     foreach (int i in data)
+        //     {
+        //         Console.Write($"{i},");
+        //     }
+        //     Console.Write($"]");
+        //     Console.WriteLine();
+        // }
+        //
+        // Console.WriteLine("end....");
 
-        Console.WriteLine("end....");
+        //var nqueen = new NQueenProblem();
+        //nqueen.nQueen();
+        //var backtrack = new BacktrackingProblem();
+        //backtrack.ClimbStairs();
+        //backtrack.MazePath();
+        //backtrack.SolveSudoko();
+        // var ans = backtrack.Subsets();
+        //
+        // foreach (var an in ans)
+        // {
+        //     Console.Write("{");
+        //     foreach (var i in an)
+        //     {
+        //         Console.Write(i+",");
+        //     }
+        //
+        //     Console.Write("}");
+        //     
+        // }
+        // Console.WriteLine("----------");
+        //backtrack.NQueen();
+        //var randomPr = new RandomProblems();
+        //randomPr.subsets();
+
+        //backtrack.ClimbStairs();
+
+        // var result = backtrack.Permutations([1, 2, 3, 4]);
+        // foreach (List<int> list in result)
+        // {
+        //     foreach (int i in list)
+        //     {
+        //         Console.Write(i+",");
+        //     }
+        //
+        //     Console.WriteLine();
+        // }
+
+        // var revisionAndPractice = new RivisionAndPractice();
+        // var result = revisionAndPractice.Subsets(new[] { 1, 2, 3 });
+        // foreach (List<int> list in result)
+        // {
+        //     foreach (int i in list)
+        //     {
+        //         Console.Write(i+",");
+        //     }
+        //     Console.WriteLine();
+        // }
+
     }
 }
